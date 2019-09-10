@@ -1,0 +1,49 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+
+  @include response(tab-land) {
+    font-size: 56.25%;
+  }
+
+  @include response(tab-port) {
+    font-size: 50%;
+  }
+
+  @include response(phone) {
+    font-size: 30%;
+  }
+
+  @include response(big-desktop) {
+    font-size: 75%;
+  }
+}
+
+body {
+  font-family: sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.container {
+  max-width: 114rem;
+  margin-left: auto;
+  margin-right: auto;
+}
