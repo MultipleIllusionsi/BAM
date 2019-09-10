@@ -1,11 +1,13 @@
 {
-  "name": "mountains",
+  "name": "afrodyta",
   "version": "1.0.0",
   "description": "Landing page",
   "main": "./index.js",
   "homepage": "https://multipleillusionsi.github.io/Afrodyta/",
   "scripts": {
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "start": "parcel index.pug -d _test",
+    "build": "parcel build index.pug --public-url ./"
   },
   "author": "Zakharov S.S.",
   "license": "ISC",
