@@ -1,0 +1,17 @@
+.collection1 {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+        width: 50%;
+    }
+}
+
+.collection2 {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+        width: 50%;
+    }
+}

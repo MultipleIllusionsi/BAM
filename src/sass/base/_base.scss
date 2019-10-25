@@ -9,6 +9,7 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  color: red;
 
   @include response(tab-land) {
     font-size: 56.25%;
@@ -22,15 +23,21 @@ html {
     font-size: 30%;
   }
 
-  @include response(big-desktop) {
-    font-size: 75%;
-  }
+  // @include response(big-desktop) {
+  //   font-size: 75%;
+  // }
 }
 
 body {
-  font-family: sans-serif;
-  font-weight: 400;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 300;
   line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  // max-height: 100%;
+  background-size: cover;
 }
 
 li {
@@ -43,7 +50,8 @@ a {
 }
 
 .container {
-  max-width: 114rem;
+  max-width: 120rem;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 2rem;
 }

@@ -1,0 +1,11 @@
+.header {
+  margin-top: 2rem;
+
+  &-nav {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.6rem;
+  }
+
+  &-nav__item {}
+}

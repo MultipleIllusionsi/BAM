@@ -1,13 +1,13 @@
 {
-  "name": "afrodyta",
+  "name": "bam",
   "version": "1.0.0",
-  "description": "Landing page",
+  "description": "BAM is a photography site",
   "main": "./index.js",
-  "homepage": "https://multipleillusionsi.github.io/Afrodyta/",
+  "homepage": "https://multipleillusionsi.github.io/BAM/",
   "scripts": {
     "deploy": "gh-pages -d dist",
-    "start": "parcel index.pug -d _test",
-    "build": "parcel build index.pug --public-url ./"
+    "start": "parcel src/index.pug -d _test",
+    "build": "parcel build src/index.pug --public-url ./"
   },
   "author": "Zakharov S.S.",
   "license": "ISC",
