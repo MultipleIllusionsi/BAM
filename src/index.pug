@@ -5,11 +5,19 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,700&display=swap" rel="stylesheet">
+        //- link(rel="preload", href="/assets/preloader-video.mp4" as="video")
+
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,700&display=swap")
         link(rel="stylesheet", href="/sass/main.scss")
         script(src="script.js", defer)
         title BAM | Home
     body
+        .preloader
+            .preloader-wrapper           
+                video(autoplay loop muted playsinline)
+                    source(src="/assets/preloader-video.mp4", type="video/mp4")
+                h1 BAM
+                h2 Photographers & Directors
         .collection-word
         a(href="#", class="motion-work") motion work
         header.header

@@ -4,3 +4,44 @@
     font-size: 1.8rem;
     padding-left: 2.5rem;
 }
+
+.preloader {
+    position: fixed;
+    z-index: 2000;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: .5s all ease-out;
+
+    &-wrapper {
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        & h1 {
+            position: absolute;
+            font-size: 230px;
+            letter-spacing: 15px;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(.85, 1.0);
+        }
+
+        & h2 {
+            position: absolute;
+            font-weight: 400;
+            font-size: 25px;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    & video {
+        width: 100%;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        object-position: center center;
+    }
+}
