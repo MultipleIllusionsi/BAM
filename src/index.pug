@@ -7,32 +7,49 @@ html(lang="en")
         
         <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,700&display=swap" rel="stylesheet">
         link(rel="stylesheet", href="/sass/main.scss")
+        script(src="script.js", defer)
         title BAM | Home
-    body
-        div.container
-            header.header
-                nav
-                    ul.header-nav
-                        li.header-nav__item News
-                        li.header-nav__item.key-nav-route BAM
-                        li.header-nav__item Index
-            section.collection1
-                .collection1__item
-                    img.collection1__item--img(src="/assets/v60-1.jpg", alt="V60LA image 1")
-                .collection1__item
-                    img.collection1__item--img(src="/assets/v60-2.jpg", alt="V60LA image 2")
-                .collection1__item
-                    img.collection1__item--img(src="/assets/v60-3.jpg", alt="V60LA image 3")
-                .collection1__item
-                    img.collection1__item--img(src="/assets/v60-4.jpg", alt="V60LA image 4")
-            section.collection2
-                .collection2__item
-                    img.collection1__item--img(src="/assets/mercedes_g-1.jpg", alt="Mercedes G image 1")
-                .collection2__item
-                    img.collection1__item--img(src="/assets/mercedes_g-2.jpg", alt="Mercedes G image 2")
-                .collection2__item
-                    img.collection1__item--img(src="/assets/mercedes_g-3.jpg", alt="Mercedes G image 3")
-                .collection2__item
-                    img.collection1__item--img(src="/assets/mercedes_g-4.jpg", alt="Mercedes G image 4")
+    body    
+        a(href="#", class="motion-work") motion work
+        header.header
+            nav
+                ul.header-nav
+                    li.header-nav__item 
+                        a(href="#") News
+                    li.header-nav__item.key-nav-route 
+                        a(href="#") BAM
+                    li.header-nav__item 
+                        a(href="#") Index
+        menu        
+            section.collection1(data-title="V60LA")
+                .word-wrapper.word-wrapper--1 V60LA
+                .collection1__item.collection-item--center
+                    img(class="collection1__item--1",src="/assets/v60-1.jpg", alt="V60LA image 1")
+                .collection1__item.collection-item--center
+                    img(class="collection1__item--2",src="/assets/v60-2.jpg", alt="V60LA image 2")
+                .collection1__item.collection-item--center
+                    img(class="collection1__item--3",src="/assets/v60-3.jpg", alt="V60LA image 3")
+                .collection1__item.collection-item--center
+                    img(class="collection1__item--4",src="/assets/v60-4.jpg", alt="V60LA image 4")
+            section.collection2(data-title=`"G"`)
+                .word-wrapper.word-wrapper--2 "G"
+                .collection2__item.collection-item--center
+                    img(class="collection2__item--1",src="/assets/mercedes_g-1.jpg", alt="Mercedes G image 1")
+                .collection2__item.collection-item--center
+                    img(class="collection2__item--2",src="/assets/mercedes_g-2.jpg", alt="Mercedes G image 2")
+                .collection2__item.collection-item--big
+                    img(class="collection2__item--3",src="/assets/mercedes_g-3.jpg", alt="Mercedes G image 3")
+                .collection2__item.collection-item--small
+                    img(class="collection2__item--4",src="/assets/mercedes_g-4.jpg", alt="Mercedes G image 4")
+            section.collection3(data-title=`"VANS"`)
+                .word-wrapper.word-wrapper--3 VANS
+                .collection3__item.collection-item--center
+                    img(class="collection3__item--1",src="/assets/vans-1.gif", alt="Vans image 1")
+                .collection3__item.collection-item--center
+                    img(class="collection3__item--2",src="/assets/vans-2.jpg", alt="Vans image 2")
+                .collection3__item.collection-item--big
+                    img(class="collection3__item--3",src="/assets/vans-3.jpg", alt="Vans image 3")
+                .collection3__item.collection-item--small
+                    img(class="collection3__item--4",src="/assets/vans-4.jpg", alt="Vans image 4")
                 
-        
+    
