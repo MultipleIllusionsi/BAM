@@ -18,5 +18,9 @@
   }
 
 
-  &-nav__item {}
+  &-nav__item {
+    &:hover {
+      font-weight: 700;
+    }
+  }
 }
