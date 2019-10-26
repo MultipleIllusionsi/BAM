@@ -1,5 +1,6 @@
-.word-wrapper {
-    position: absolute;
+.collection-word {
+    position: fixed;
+    pointer-events: none;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -9,29 +10,6 @@
     -webkit-text-stroke-color: red;
     font-weight: 700;
     z-index: 100;
-}
-
-.word-wrapper {
-    &--1 {
-        opacity: 0;
-    }
-
-    &--2 {
-        opacity: 0;
-    }
-
-    &--3 {
-        opacity: 0;
-    }
-
-    &--4 {
-        opacity: 0;
-    }
-
-    &--5 {
-        opacity: 0;
-    }
-
 }
 
 .motion-work {
@@ -71,7 +49,6 @@
     padding-top: 7rem;
     display: flex;
     flex-wrap: wrap;
-    position: relative;
 
     &__item {
         &--1 {
@@ -97,16 +74,11 @@
             width: 90%;
         }
     }
-
-    &:hover .word-wrapper--1 {
-        opacity: 1;
-    }
 }
 
 .collection2 {
     display: flex;
     flex-wrap: wrap;
-    position: relative;
 
     &__item {
         &--1 {
@@ -126,16 +98,11 @@
         &--4 {}
 
     }
-
-    &:hover .word-wrapper--2 {
-        opacity: 1;
-    }
 }
 
 .collection3 {
     display: flex;
     flex-wrap: wrap;
-    position: relative;
 
     &__item {
         &--1 {
@@ -153,16 +120,9 @@
         &--4 {}
 
     }
-
-    &:hover .word-wrapper--3 {
-        opacity: 1;
-    }
 }
 
 // &--1 {}
-
 // &--2 {}
-
 // &--3 {}
-
 // &--4 {}
