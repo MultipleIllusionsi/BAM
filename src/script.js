@@ -1,3 +1,6 @@
+import "lazysizes";
+import "lazysizes/plugins/parent-fit/ls.parent-fit";
+
 (function() {
   document.addEventListener("DOMContentLoaded", appInit);
 
@@ -5,7 +8,7 @@
     console.log("got onload");
   };
 
-  const main = document.querySelector("menu");
+  const main = document.querySelector("main");
   const collectionWord = document.querySelector(".collection-word");
   const preloader = document.querySelector(".preloader");
 

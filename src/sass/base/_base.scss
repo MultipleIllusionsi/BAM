@@ -35,11 +35,12 @@ body {
   line-height: 1.6;
 }
 
-menu {
+main {
   width: 100%;
   max-width: 120rem;
   padding: 10rem 2rem 3rem;
   margin: 0 auto;
+  will-change: transform;
 }
 
 footer {
@@ -60,4 +61,14 @@ li {
 a {
   text-decoration: none;
   color: currentColor;
+}
+
+.lazyload,
+.lazyloading {
+  opacity: 0;
+}
+
+.lazyloaded {
+  opacity: 1;
+  transition: all 3s;
 }

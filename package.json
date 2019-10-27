@@ -13,10 +13,12 @@
   "license": "ISC",
   "devDependencies": {
     "cssnano": "^4.1.10",
+    "parcel-plugin-lazy": "0.0.4",
     "pug": "^2.0.4"
   },
   "dependencies": {
     "gh-pages": "^2.1.1",
+    "lazysizes": "^5.1.2",
     "sass": "^1.23.0-module.beta.1"
   }
 }
