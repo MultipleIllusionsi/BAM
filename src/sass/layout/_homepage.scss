@@ -119,6 +119,7 @@ img[class*="__item--4"] {
         &--1 {
             top: 0;
             width: 75%;
+            float: right;
         }
 
         &--2 {
@@ -254,6 +255,7 @@ img[class*="__item--4"] {
 
         &--4 {
             width: 100%;
+            float: left;
         }
     }
 }
