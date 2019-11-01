@@ -1,7 +1,7 @@
 .header {
   background-color: rgba(255, 255, 255, 0.795);
   position: fixed;
-  z-index: 1000;
+  z-index: 100;
   width: 100%;
 
   & nav {
@@ -14,7 +14,12 @@
   &-nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-size: 1.6rem;
+
+    @include response(phone) {
+      font-size: 4rem;
+    }
   }
 
   &-nav__item {

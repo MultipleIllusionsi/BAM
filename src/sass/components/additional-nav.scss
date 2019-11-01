@@ -1,0 +1,40 @@
+#additional-nav:target {
+    display: block;
+}
+
+.additional-nav {
+    &--wrapper {
+        display: none;
+        background-color: #fff;
+        position: fixed;
+        margin-top: 7vh;
+        top: 0;
+        left: 0;
+        z-index: 500;
+        width: 100vw;
+        height: 93vh;
+        min-width: 320px;
+
+        & nav {
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+
+    &__item {
+        border-top: 1px solid red;
+        height: calc(95vh / 4);
+        line-height: calc(95vh / 4);
+        font-size: 14vh;
+        text-transform: uppercase;
+        text-align: center;
+
+        @include response(phone) {
+            font-size: 8vh;
+        }
+
+        &:hover {
+            font-weight: 700;
+        }
+    }
+}
