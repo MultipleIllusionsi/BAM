@@ -1,6 +1,3 @@
-import "lazysizes";
-import "lazysizes/plugins/parent-fit/ls.parent-fit";
-
 (function() {
   document.addEventListener("DOMContentLoaded", appInit);
 

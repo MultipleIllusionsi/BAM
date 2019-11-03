@@ -1,4 +1,4 @@
-include pug/templates/head-tag.pug
+include pug/templates/headTagLazyload.pug
 body
     include pug/templates/preloader.pug
     .collection-word
@@ -77,8 +77,8 @@ body
             .collection8__item.collection-item--big
                 img(class="collection8__item--3 lazyload",data-src="/assets/mbjs-3.jpg", alt="MBJS image 3")
             .collection8__item.collection-item--small
-                video(autoplay loop muted playsinline, class="collection8__item--4 lazyload")
-                    source(data-src="/assets/mbjs-4.mp4", type="video/mp4")
+                video(autoplay loop muted playsinline, class="collection8__item--4")
+                    source(src="/assets/mbjs-4.mp4", type="video/mp4")
         section.collection9(data-title="PROCEED")
             .collection9__item.collection-item--center
                 img(class="collection9__item--1 lazyload",data-src="/assets/proceed-1.jpg", alt="Kia Proceed image 1")
