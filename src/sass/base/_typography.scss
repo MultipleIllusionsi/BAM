@@ -1,13 +1,23 @@
 .heading-primary {
-  &--main {
-  }
+  &--main {}
 
-  &--sub {
-  }
+  &--sub {}
 }
 
-.heading-secondary {
-}
+.heading-secondary {}
 
 .heading-tertiary {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin: 2rem 0;
+}
+
+.plain-text {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.2rem;
+
+  @include response(phone) {
+    line-height: 2rem;
+  }
 }

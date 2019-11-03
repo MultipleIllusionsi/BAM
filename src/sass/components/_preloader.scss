@@ -1,0 +1,61 @@
+.preloader {
+    position: fixed;
+    z-index: 2000;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    cursor: pointer;
+    transition: 0.5s all ease-out;
+
+    &-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        & h1 {
+            margin: 0;
+            text-align: center;
+            font-size: 13vw;
+            letter-spacing: 15px;
+            transform: scale(0.85, 1.0);
+
+            @include response(tab-land) {
+                font-size: 20vw;
+            }
+
+            @include response(phone) {
+                font-size: 30vw;
+            }
+        }
+
+        & h2 {
+            margin: 0;
+            text-align: center;
+            font-weight: 400;
+            font-size: 2vw;
+
+            @include response(tab-land) {
+                font-size: 3vw;
+            }
+
+            @include response(phone) {
+                font-size: 5vw;
+            }
+        }
+    }
+
+    &-wrapper {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    & video {
+        width: 100%;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        object-position: center center;
+    }
+}

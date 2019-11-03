@@ -26,19 +26,27 @@
     }
 }
 
-section {
-    display: flex;
-    flex-wrap: wrap;
-}
+.homepage {
+    padding: 10rem 2rem 3rem;
 
-img[class*="__item--1"],
-img[class*="__item--3"] {
-    float: right;
-}
+    @include response(tab-land) {
+        padding-top: 13rem;
+    }
 
-img[class*="__item--2"],
-img[class*="__item--4"] {
-    float: left;
+    section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    img[class*="__item--1"],
+    img[class*="__item--3"] {
+        float: right;
+    }
+
+    img[class*="__item--2"],
+    img[class*="__item--4"] {
+        float: left;
+    }
 }
 
 .collection-item {

@@ -11,22 +11,6 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
   color: red;
-
-  @include response(tab-land) {
-    font-size: 56.25%;
-  }
-
-  @include response(tab-port) {
-    font-size: 50%;
-  }
-
-  @include response(phone) {
-    font-size: 30%;
-  }
-
-  // @include response(big-desktop) {
-  //   font-size: 75%;
-  // }
 }
 
 body {
@@ -39,13 +23,9 @@ body {
 main {
   width: 100%;
   max-width: 120rem;
-  padding: 10rem 2rem 3rem;
   margin: 0 auto;
+  min-height: 90vh;
   will-change: transform;
-
-  @include response(tab-land) {
-    padding-top: 13rem;
-  }
 }
 
 footer {

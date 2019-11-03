@@ -16,10 +16,6 @@
     justify-content: space-between;
     align-items: center;
     font-size: 1.6rem;
-
-    @include response(phone) {
-      font-size: 4rem;
-    }
   }
 
   &-nav__item {
