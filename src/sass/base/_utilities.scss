@@ -6,6 +6,10 @@
 
 .mail-link {
     text-decoration: underline;
+
+    &:hover {
+        font-weight: bold;
+    }
 }
 
 .paragraph {

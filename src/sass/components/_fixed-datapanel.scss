@@ -1,0 +1,31 @@
+.fixed-datapanel {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 100;
+    font-size: 1.6rem;
+    margin-top: 20vh;
+    font-weight: 400;
+
+    &--left {
+        transform: rotate(-90deg);
+        margin-left: 15vw;
+
+        @include response(tab-land) {
+            margin-left: 5vw;
+        }
+
+        &:hover {
+            font-weight: 700;
+        }
+    }
+
+    &--right {
+        margin-right: 7vw;
+
+        @include response(tab-land) {
+            margin-right: 2vw;
+        }
+    }
+}

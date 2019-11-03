@@ -3,3 +3,4 @@
 /_test
 /.cache
 package-lock.json
+/src/assets

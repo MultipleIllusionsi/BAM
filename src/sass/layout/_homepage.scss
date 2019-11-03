@@ -13,19 +13,6 @@
     will-change: transform;
 }
 
-.motion-work {
-    position: fixed;
-    z-index: 100;
-    transform: rotate(-90deg);
-    font-size: 16px;
-    top: 25vh;
-    left: 10vw;
-
-    &:hover {
-        font-weight: 700;
-    }
-}
-
 .homepage {
     padding: 10rem 2rem 3rem;
 
