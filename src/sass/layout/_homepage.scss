@@ -10,8 +10,49 @@
     -webkit-text-stroke-color: red;
     font-weight: 700;
     z-index: 100;
+    line-height: 35rem;
     will-change: transform;
+
+    @include response(tab-port) {
+        line-height: 15rem;
+    }
+
+    @include response(phone) {
+        line-height: 10rem;
+    }
+
+    @include no-hover {
+        display: none;
+    }
 }
+
+.collection-title {
+    display: none;
+
+    @include no-hover {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 20vw;
+        color: transparent;
+        -webkit-text-stroke-width: 5px;
+        -webkit-text-stroke-color: red;
+        font-weight: 700;
+        z-index: 100;
+        line-height: 35rem;
+
+        @include response(tab-port) {
+            line-height: 15rem;
+        }
+
+        @include response(phone) {
+            line-height: 10rem;
+        }
+    }
+}
+
 
 .homepage {
     padding: 10rem 2rem 3rem;
@@ -23,6 +64,11 @@
     section {
         display: flex;
         flex-wrap: wrap;
+        position: relative;
+
+        &>* {
+            pointer-events: none;
+        }
     }
 
     img[class*="__item--1"],

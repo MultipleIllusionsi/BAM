@@ -1,14 +1,23 @@
 .fixed-datapanel {
     position: fixed;
-    display: flex;
-    justify-content: space-between;
+    // display: flex;
+    // justify-content: space-between;
     width: 100%;
     z-index: 100;
     font-size: 1.6rem;
     margin-top: 20vh;
     font-weight: 400;
 
+    // @include response(phone) {
+    //     position: relative;
+    //     margin-top: 0;
+    //     margin-bottom: 2rem;
+    //     flex-direction: column;
+    // }
+
     &--left {
+        position: absolute;
+        left: 0;
         transform: rotate(-90deg);
         margin-left: 15vw;
 
@@ -16,16 +25,36 @@
             margin-left: 5vw;
         }
 
+        @include response(phone) {
+            margin-left: 0;
+            padding-left: 2rem;
+        }
+
+        // @include response(phone) {
+        //     transform: none;
+        //     margin-left: 0;
+        //     margin-bottom: 2rem;
+        //     flex-direction: column;
+        //     text-decoration: underline;
+        // }
+
         &:hover {
             font-weight: 700;
         }
     }
 
     &--right {
+        position: absolute;
+        right: 0;
         margin-right: 7vw;
 
         @include response(tab-land) {
             margin-right: 2vw;
+        }
+
+        @include response(phone) {
+            margin-right: 0;
+            padding-right: 2rem;
         }
     }
 }

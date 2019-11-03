@@ -9,9 +9,20 @@
   const collectionWord = document.querySelector(".collection-word");
   const preloader = document.querySelector(".preloader");
 
+  const isTouchDevice = () => {
+    try {
+      document.createEvent("TouchEvent");
+      return true;
+    } catch (e) {
+      return false;
+    }
+  };
+
   function appInit() {
     initPreloader();
-    addTransformToContent();
+    if (isTouchDevice() === false) {
+      addTransformToContent();
+    }
   }
 
   function initPreloader() {
@@ -47,11 +58,10 @@
       const Y = e.clientY;
       main.style.transform = `translate(-${X / 30}px, -${Y / 30}px)`;
 
-      const { dataset, parentNode } = e.target.parentNode;
+      const { dataset } = e.target;
 
-      if (dataset.title || parentNode.dataset.title) {
-        const titleOfSection =
-          dataset.title || parentNode.dataset.title;
+      if (dataset.title) {
+        const titleOfSection = dataset.title;
         collectionWord.innerHTML = titleOfSection;
       } else {
         collectionWord.innerHTML = "";
