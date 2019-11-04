@@ -1,0 +1,35 @@
+include pug/templates/headTagSimple.pug
+body
+    include pug/templates/header.pug
+    main.news-page
+        section.section1.half-content
+            div
+                h2.heading-secondary Welcome KAERCHER
+                video(controls playsinline poster="")
+                        source(src="/assets/motion/antoni.mp4", type="video/mp4")
+                p.plain-text.paragraph Agency: antoni
+            div
+                h2.heading-secondary Junge Sterne VANS
+                video(autoplay muted playsinline,  class="video")
+                        source(src="/assets/vans-1.mp4", type="video/mp4")
+                p.plain-text Agency: antoni
+                p.plain-text.paragraph #[a(href="#", class="mail-link") Read more] 
+        section.section2.half-content
+            div
+                h2.heading-secondary KIA ProCeed
+                //- video(controls playsinline poster="")
+                //-         source(src="/assets/news/kia.mp4", type="video/mp4")
+                img(src="/assets/news/kia.gif", alt="kia")
+                p.plain-text Agency: INNOCEAN Worldwide Europe GmbH
+                p.plain-text.paragraph #[a(href="#", class="mail-link") Read more] 
+            div
+                h2.heading-secondary Toyota Club
+                //- video(autoplay muted playsinline,  class="video")
+                //-         source(src="/assets/news/toyota.mp4", type="video/mp4")
+                img(src="/assets/news/toyota.jpg", alt="toyota")
+                p.plain-text Agency: The &amp; Partnership
+                p.plain-text.paragraph #[a(href="#", class="mail-link") Read more] 
+        section.section3 3 
+        section.section4 4 
+        section.section5 5
+        section.section6 6

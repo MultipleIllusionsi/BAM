@@ -8,6 +8,10 @@
     margin-top: 20vh;
     font-weight: 400;
 
+    @include response(phone) {
+        display: none;
+    }
+
     // @include response(phone) {
     //     position: relative;
     //     margin-top: 0;
@@ -27,7 +31,6 @@
 
         @include response(phone) {
             margin-left: 0;
-            padding-left: 2rem;
         }
 
         // @include response(phone) {

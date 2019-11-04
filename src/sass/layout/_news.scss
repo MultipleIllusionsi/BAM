@@ -1,0 +1,58 @@
+.news-page {
+    padding: 10rem 2rem 3rem;
+
+    @include response(tab-land) {
+        padding-top: 8rem;
+    }
+
+    & .heading-secondary {
+        margin-bottom: 2rem;
+
+        @include response(phone) {
+            margin-bottom: 0;
+        }
+    }
+
+    & .plain-text {
+        font-weight: 300;
+    }
+
+    & video {
+        width: 100%;
+    }
+
+    & section {
+        margin-bottom: 5rem;
+        display: flex;
+
+    }
+
+    .half-content {
+        justify-content: space-between;
+        align-items: flex-start;
+
+        &>* {
+            width: 49%;
+
+            @include response(phone) {
+                width: 100%;
+            }
+        }
+
+        @include response(phone) {
+            flex-direction: column;
+        }
+    }
+
+    .section1 {}
+
+    .section2 {}
+
+    .section3 {}
+
+    .section4 {}
+
+    .section5 {}
+
+    .section6 {}
+}

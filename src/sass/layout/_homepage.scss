@@ -19,6 +19,7 @@
 
     @include response(phone) {
         line-height: 10rem;
+        -webkit-text-stroke-width: 3px;
     }
 
     @include no-hover {
@@ -45,10 +46,12 @@
 
         @include response(tab-port) {
             line-height: 15rem;
+
         }
 
         @include response(phone) {
             line-height: 10rem;
+            -webkit-text-stroke-width: 3px;
         }
     }
 }
