@@ -1,6 +1,4 @@
 .about-page {
-    padding: 10rem 2rem 3rem;
-
     @include response(tab-land) {
         padding-top: 7rem;
     }

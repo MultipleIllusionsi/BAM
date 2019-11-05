@@ -1,6 +1,4 @@
 .news-page {
-    padding: 10rem 2rem 3rem;
-
     @include response(tab-land) {
         padding-top: 8rem;
     }
@@ -15,10 +13,6 @@
 
     & .plain-text {
         font-weight: 300;
-    }
-
-    & video {
-        width: 100%;
     }
 
     & section {

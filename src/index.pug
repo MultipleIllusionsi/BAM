@@ -5,37 +5,40 @@ body
     include pug/templates/fixed-datapanel.pug
     include pug/templates/header.pug
     main.homepage   
-        section.collection1(data-title="V60LA")
-            .collection-title.collection-title--1 V60LA
-            .collection1__item.collection-item--center
-                img(class="collection1__item--1",src="/assets/v60-1.jpg", alt="V60LA image 1")
-            .collection1__item.collection-item--center
-                img(class="collection1__item--2",src="/assets/v60-2.jpg", alt="V60LA image 2")
-            .collection1__item.collection-item--center
-                img(class="collection1__item--3",src="/assets/v60-3.jpg", alt="V60LA image 3")
-            .collection1__item.collection-item--center
-                img(class="collection1__item--4",src="/assets/v60-4.jpg", alt="V60LA image 4")
-        section.collection2(data-title=`"G"`)
-            .collection-title.collection-title--2 "G"
-            .collection2__item.collection-item--center
-                img(class="collection2__item--1",src="/assets/mercedes_g-1.jpg", alt="Mercedes G image 1")
-            .collection2__item.collection-item--center
-                img(class="collection2__item--2",src="/assets/mercedes_g-2.jpg", alt="Mercedes G image 2")
-            .collection2__item.collection-item--big
-                img(class="collection2__item--3",src="/assets/mercedes_g-3.jpg", alt="Mercedes G image 3")
-            .collection2__item.collection-item--small
-                img(class="collection2__item--4",src="/assets/mercedes_g-4.jpg", alt="Mercedes G image 4")
-        section.collection3(data-title="VANS")
-            .collection-title.collection-title--3 VANS
-            .collection3__item.collection-item--center
-                video(autoplay loop muted playsinline, class="collection3__item--1")
-                    source(src="/assets/vans-1.mp4", type="video/mp4")
-            .collection3__item.collection-item--center
-                img(class="collection3__item--2",src="/assets/vans-2.jpg", alt="Vans image 2")
-            .collection3__item.collection-item--big
-                img(class="collection3__item--3",src="/assets/vans-3.jpg", alt="Vans image 3")
-            .collection3__item.collection-item--small
-                img(class="collection3__item--4",src="/assets/vans-4.jpg", alt="Vans image 4")
+        a(href="/v60la.pug")
+            section.collection1(data-title="V60LA")
+                .collection-title.collection-title--1 V60LA
+                .collection1__item.collection-item--center
+                    img(class="collection1__item--1",src="/assets/v60-1.jpg", alt="V60LA image 1")
+                .collection1__item.collection-item--center
+                    img(class="collection1__item--2",src="/assets/v60-2.jpg", alt="V60LA image 2")
+                .collection1__item.collection-item--center
+                    img(class="collection1__item--3",src="/assets/v60-3.jpg", alt="V60LA image 3")
+                .collection1__item.collection-item--center
+                    img(class="collection1__item--4",src="/assets/v60-4.jpg", alt="V60LA image 4")
+        a(href="g.pug")
+            section.collection2(data-title=`"G"`)
+                .collection-title.collection-title--2 "G"
+                .collection2__item.collection-item--center
+                    img(class="collection2__item--1",src="/assets/mercedes_g-1.jpg", alt="Mercedes G image 1")
+                .collection2__item.collection-item--center
+                    img(class="collection2__item--2",src="/assets/mercedes_g-2.jpg", alt="Mercedes G image 2")
+                .collection2__item.collection-item--big
+                    img(class="collection2__item--3",src="/assets/mercedes_g-3.jpg", alt="Mercedes G image 3")
+                .collection2__item.collection-item--small
+                    img(class="collection2__item--4",src="/assets/mercedes_g-4.jpg", alt="Mercedes G image 4")
+        a(href="vans.pug")
+            section.collection3(data-title="VANS")
+                .collection-title.collection-title--3 VANS
+                .collection3__item.collection-item--center
+                    video(autoplay loop muted playsinline, class="collection3__item--1")
+                        source(src="/assets/vans-1.mp4", type="video/mp4")
+                .collection3__item.collection-item--center
+                    img(class="collection3__item--2",src="/assets/vans-2.jpg", alt="Vans image 2")
+                .collection3__item.collection-item--big
+                    img(class="collection3__item--3",src="/assets/vans-3.jpg", alt="Vans image 3")
+                .collection3__item.collection-item--small
+                    img(class="collection3__item--4",src="/assets/vans-4.jpg", alt="Vans image 4")
         section.collection4(data-title="AMORA")
             .collection-title.collection-title--4 AMORA
             .collection4__item.collection-item--center

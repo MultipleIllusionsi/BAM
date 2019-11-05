@@ -58,10 +58,15 @@
 
 
 .homepage {
-    padding: 10rem 2rem 3rem;
-
     @include response(tab-land) {
-        padding-top: 13rem;
+        padding-top: 8rem;
+    }
+
+    a:active {
+        &>* {
+            transition: 0.5s ease-out;
+            transform: scale(0.5);
+        }
     }
 
     section {
