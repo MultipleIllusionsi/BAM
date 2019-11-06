@@ -19,7 +19,7 @@
 
     @include response(phone) {
         line-height: 10rem;
-        -webkit-text-stroke-width: 3px;
+        -webkit-text-stroke-width: 2px;
     }
 
     @include no-hover {
@@ -51,7 +51,7 @@
 
         @include response(phone) {
             line-height: 10rem;
-            -webkit-text-stroke-width: 3px;
+            -webkit-text-stroke-width: 2px;
         }
     }
 }
@@ -62,17 +62,36 @@
         padding-top: 8rem;
     }
 
-    a:active {
-        &>* {
-            transition: 0.5s ease-out;
-            transform: scale(0.5);
+    a {
+        display: block;
+
+        @include response(phone) {
+            &:not(:last-child) {
+                margin-bottom: 2rem;
+            }
+        }
+
+        &:active {
+            &>* {
+                transition: 0.5s ease-out;
+                transform: scale(0.5);
+            }
         }
     }
+
+
 
     section {
         display: flex;
         flex-wrap: wrap;
         position: relative;
+
+        //delete later
+        @include response(phone) {
+            &:not(:last-child) {
+                margin-bottom: 2rem;
+            }
+        }
 
         &>* {
             pointer-events: none;
@@ -87,6 +106,34 @@
     img[class*="__item--2"],
     img[class*="__item--4"] {
         float: left;
+    }
+}
+
+.main-photo {
+    @include response(phone) {
+        display: block !important;
+        width: 100% !important;
+    }
+}
+
+div[class*="collection-item"] {
+    @include response(phone) {
+        display: none;
+        padding: 0;
+    }
+}
+
+img[class*="item--1"],
+video[class*="item--1"] {
+    @include response(phone) {
+        width: 100% !important;
+        position: relative;
+        display: block;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        transform: none;
     }
 }
 
