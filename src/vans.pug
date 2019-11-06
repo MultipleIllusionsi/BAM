@@ -3,4 +3,11 @@ html(lang="en")
     include pug/templates/headTagSimple.pug
     body
         include pug/templates/header.pug
-        main.collection-page collection page vans
+        main.collection-page 
+            img(src="/assets/collections/vans/vans-1.jpg", alt="vans image 1")
+            img(src="/assets/collections/vans/vans-2.jpg", alt="vans image 2")
+            img(src="/assets/collections/vans/vans-3.jpg", alt="vans image 3")
+            div
+                video(autoplay loop muted playsinline, class="width-auto")
+                    source(src="/assets/collections/vans/vans-4.mp4" type="video/mp4")       
+        a(href="/index.pug", class="back-btn") &#215;

@@ -17,7 +17,33 @@
 }
 
 .collection-page {
-    img {
+    text-align: center;
+
+    img,
+    video {
         margin-bottom: 1.5rem;
     }
+}
+
+
+.back-btn {
+    position: fixed;
+    bottom: 2vh;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 8rem;
+    transition: 0.7s all;
+    line-height: 60%;
+
+    @include response(phone) {
+        font-size: 15vw;
+    }
+
+    &:hover {
+        color: greenyellow;
+    }
+}
+
+.width-auto {
+    width: auto;
 }

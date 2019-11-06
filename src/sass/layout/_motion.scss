@@ -11,20 +11,3 @@
         }
     }
 }
-
-.back-btn {
-    position: fixed;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 5vw;
-    transition: 0.7s all;
-
-    @include response(phone) {
-        font-size: 10vw;
-    }
-
-    &:hover {
-        color: greenyellow;
-    }
-}

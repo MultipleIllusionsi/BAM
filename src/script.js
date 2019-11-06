@@ -1,10 +1,6 @@
 (function() {
   document.addEventListener("DOMContentLoaded", appInit);
 
-  window.onload = function() {
-    console.log("got onload");
-  };
-
   const main = document.querySelector("main");
   const collectionWord = document.querySelector(".collection-word");
   const preloader = document.querySelector(".preloader");
@@ -26,18 +22,19 @@
   }
 
   function initPreloader() {
-    preloader.addEventListener("click", deletePreloadOnClick);
+    preloader.addEventListener("click", deletePreloadOnMouseClick);
+    window.addEventListener("keydown", deletePreloadOnKeyClick);
     window.addEventListener("scroll", deletePreloadOnScroll);
   }
 
-  function deletePreloadOnClick() {
+  function deletePreloadOnMouseClick() {
     preloader.style.opacity = 0;
 
     setTimeout(() => {
       preloader.remove();
-    }, 1000);
+    }, 500);
 
-    preloader.removeEventListener("click", deletePreloadOnClick);
+    preloader.removeEventListener("click", deletePreloadOnMouseClick);
   }
 
   function deletePreloadOnScroll() {
@@ -46,9 +43,20 @@
 
       setTimeout(() => {
         preloader.remove();
-      }, 1000);
+      }, 500);
 
       window.removeEventListener("scroll", deletePreloadOnScroll);
+    }
+  }
+
+  function deletePreloadOnKeyClick(event) {
+    if (event) {
+      preloader.style.opacity = 0;
+      setTimeout(() => {
+        preloader.remove();
+      }, 500);
+
+      window.removeEventListener("keydown", deletePreloadOnKeyClick);
     }
   }
 
