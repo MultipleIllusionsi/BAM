@@ -4,34 +4,69 @@ html(lang="en")
     body
         include pug/templates/header.pug
         main.news-page
-            section.section1.half-content
+            section.section1.two-columns
                 div
                     h2.heading-secondary Welcome KAERCHER
-                    video(controls playsinline poster="")
+                    video(controls playsinline)
                             source(src="/assets/motion/antoni.mp4", type="video/mp4")
                     p.plain-text.paragraph Agency: antoni
                 div
                     h2.heading-secondary Junge Sterne VANS
-                    video(autoplay muted playsinline,  class="video")
-                            source(src="/assets/vans-1.mp4", type="video/mp4")
+                    video(autoplay loop muted playsinline,  class="video")
+                            source(src="/assets/news/vans.mp4", type="video/mp4")
                     p.plain-text Agency: antoni
                     p.plain-text.paragraph #[a(href="#", class="mail-link") Read more] 
-            section.section2.half-content
+            section.section2.two-columns
                 div
                     h2.heading-secondary KIA ProCeed
-                    //- video(controls playsinline poster="")
-                    //-         source(src="/assets/news/kia.mp4", type="video/mp4")
-                    img(src="/assets/news/kia.gif", alt="kia")
+                    video(autoplay loop muted playsinline,  class="video")
+                            source(src="/assets/news/kia.mp4", type="video/mp4")
                     p.plain-text Agency: INNOCEAN Worldwide Europe GmbH
                     p.plain-text.paragraph #[a(href="#", class="mail-link") Read more] 
                 div
                     h2.heading-secondary Toyota Club
-                    //- video(autoplay muted playsinline,  class="video")
-                    //-         source(src="/assets/news/toyota.mp4", type="video/mp4")
-                    img(src="/assets/news/toyota.jpg", alt="toyota")
+                    img(src="/assets/news/toyota.jpg", alt="toyota club collection")
                     p.plain-text Agency: The &amp; Partnership
                     p.plain-text.paragraph #[a(href="#", class="mail-link") Read more] 
-            section.section3 3 
-            section.section4 4 
-            section.section5 5
-            section.section6 6
+            section.section3.two-columns
+                div
+                    h2.heading-secondary Toyota Mirai Campaign
+                    img(src="/assets/news/toyota-mirai.jpg", alt="toyota mirai collection")
+                    p.plain-text Agency: Saatchi &amp; Saatchi US
+                    p.plain-text.paragraph #[a(href="#", class="mail-link") Read more] 
+                div
+                    h2.heading-secondary MB Junge Sterne Kampagne
+                    div.two-columns--vertical
+                        img(src="/assets/news/mb-junge-1.jpg", alt="mercedes-benz junge collection photo 1")
+                        img(src="/assets/news/mb-junge-2.jpg", alt="mercedes-benz junge collection photo 2")
+                    p.plain-text Agency: antoni Holding Gmbh
+                    p.plain-text.paragraph #[a(href="#", class="mail-link") Read more]                   
+            section.section4.two-columns
+                div
+                    h2.heading-secondary Hocke Exhibition
+                    img(src="/assets/news/hocke-poster.jpg", alt="hocke poster collection")
+                    p.plain-text EXHIBITION FROM MUIZENBERG
+                    p.plain-text.paragraph #[a(href="#", class="mail-link") Read more] 
+                div
+                    h2.heading-secondary BMW Motorsport
+                    video(autoplay loop muted playsinline,  class="video")
+                            source(src="/assets/news/bmw-motorsport.mp4", type="video/mp4")     
+                    p.plain-text Agency: Serviceplan Campaign 1 // Neverest GmbH &amp; Co. KG
+                    p.plain-text.paragraph #[a(href="#", class="mail-link") Read more]  
+            section.section5.two-columns
+                div
+                    h2.heading-secondary NO MUSCLE, NO HUSTLE!
+                    img(src="/assets/news/no-hustle.jpg", alt="no muscle, no hustle collection")
+                    p.plain-text WIR SUCHEN AB SOFORT EINEN FESTEN PRAKTIKANTEN/FOTOASSISTENTEN AB KÖLN.
+                    p.plain-text.paragraph #[a(href="#", class="mail-link") Read more] 
+                div
+                    h2.heading-secondary Mercedes Benz Petronas F1
+                    img(src="/assets/news/mb-petronas.jpg", alt="mercedes benz petronas F1 collection")      
+                    p.plain-text Agency: antoni Holding GmbH
+                    p.plain-text.paragraph #[a(href="#", class="mail-link") Read more]  
+            section.section6.two-columns
+                div
+                    h2.heading-secondary Toyota Team D Print &amp; TVC
+                    img(src="/assets/news/toyota-team.jpg", alt="toyota-team collection")
+                    p.plain-text Agency: The &amp; Partnership
+                    p.plain-text.paragraph #[a(href="#", class="mail-link") Read more] 

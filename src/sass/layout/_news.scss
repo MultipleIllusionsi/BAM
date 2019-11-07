@@ -15,13 +15,22 @@
         font-weight: 300;
     }
 
+    & .paragraph {
+        @include response(phone) {
+            margin-bottom: 2.5rem;
+        }
+    }
+
     & section {
         margin-bottom: 5rem;
         display: flex;
 
+        @include response(phone) {
+            margin-bottom: 2.5rem;
+        }
     }
 
-    .half-content {
+    .two-columns {
         justify-content: space-between;
         align-items: flex-start;
 
@@ -34,6 +43,10 @@
         }
 
         @include response(phone) {
+            flex-direction: column;
+        }
+
+        &--vertical {
             flex-direction: column;
         }
     }
